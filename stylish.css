@@ -1,0 +1,152 @@
+
+@font-face {
+    font-family: Oxygen;
+    src: url(OxygenMono-Regular.ttf);
+}
+
+
+body {
+    font-family: Oxygen;
+    background-color: #e0e0df;
+    margin: 0px 3rem;
+    min-height: 800px;
+}
+header {
+    text-align: center;
+}
+
+.header-text {
+    text-decoration: none;
+    color: #372D14;
+}
+
+h1 {
+    font-size: 6rem;
+    margin: 3rem;
+}
+menu {
+    background-color: #c0ba9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 100%; */
+    /* height: 2.85em; */
+    height: auto;
+    padding: auto;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+menu > li {
+    list-style-type: none;
+}
+
+.bouton-nav {
+    color: #3d3217;
+    background-color: #c0ba9e;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0.7rem 1rem;
+    border-style: solid;
+    border-color: #3d3217;
+    border-width: 0px 1px;
+}
+
+.bouton-nav-h {
+    font-size: 25px;
+    padding: 0.7rem 0rem;
+}
+
+
+.bouton-nav:hover {
+    background-color: #7e6f5357;
+}
+
+
+
+.main-text {
+    margin: 2rem 40px;
+    background-color: #fffdf3;
+    padding: 1rem 10px;
+    max-height: 100%;
+    text-align: left;
+}
+
+.main-text > p {
+    font-size: 1.3rem;
+}
+.main-text > h2 {
+    font-size: 1.5rem;
+}
+.main-text > ul > li {
+    font-size: 1.3rem;
+}
+
+footer {
+    text-align: center;
+}
+
+.bouton{
+    color: #3d3217;
+    background-color: #f0de98;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.7rem 0.8rem;
+    border-style: solid;
+    border-color: #3d3217;
+    border-width: 1px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.bouton:hover{
+    background-color: #d6c789;
+}
+
+.switch{
+    margin-top: 15px;
+    font-size: 1.2rem;
+    padding: 0.7rem 0rem;
+}
+
+@media (width <= 1000px) {
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    h1 {
+        margin: 1rem;
+    }
+    menu {
+        background-color: #c0ba9e;
+        display: block;
+        max-width: 100%;
+        margin-top: 2rem;
+        padding: 0px;
+        font-size: 1.8rem;
+    }
+    .bouton-nav {
+        color: #3d3217;
+        display: block;
+        margin: 0px;
+        background-color: #c0ba9e;
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.8rem;
+        border-style: solid;
+        border-color: #3d3217;
+        border-width:1px 0px;
+    }
+    .bouton-nav-h {
+        margin: 0px;
+        padding: 0px;
+    }
+    .switch{
+        text-align: center;
+    }
+}
