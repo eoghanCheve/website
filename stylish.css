@@ -52,6 +52,7 @@ menu > li {
     border-style: solid;
     border-color: #3d3217;
     border-width: 0px 1px;
+    margin-left: -1px;
 }
 
 .bouton-nav-h {
@@ -134,6 +135,7 @@ footer {
         color: #3d3217;
         display: block;
         margin: 0px;
+        margin-bottom: -1px;
         background-color: #c0ba9e;
         text-align: left;
         text-decoration: none;
