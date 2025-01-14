@@ -77,12 +77,26 @@ menu > li {
 
 .main-text > p {
     font-size: 1.3rem;
+    margin-left: 0.7rem;
 }
 .main-text > h2 {
     font-size: 1.5rem;
 }
 .main-text > ul > li {
     font-size: 1.3rem;
+}
+
+.main-text > h3 {
+    font-size: 1.1rem;
+}
+
+.main-text > h3 > a {
+    text-decoration: solid;
+    color: black;
+}
+
+.main-text > h3 > a:hover {
+    text-decoration: underline;
 }
 
 footer {
