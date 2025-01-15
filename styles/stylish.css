@@ -7,6 +7,16 @@
     --main-text-color: #fffdf3;
     --text-color: black;
 }
+
+/* :root {
+    --back-color: #01010c;
+    --menu-color: rgb(44, 42, 33);
+    --menu-hover-color: #7e6f5357;
+    --solid-color: #87ce98;
+    --main-text-color: #fffdf3;
+    --text-color: black;
+} */
+
 /* size */
 
 @font-face {
@@ -27,7 +37,7 @@ header {
 
 .header-text {
     text-decoration: none;
-    color: #372D14;
+    color: var(--solid-color);
 }
 
 h1 {
