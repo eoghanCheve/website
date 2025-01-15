@@ -99,6 +99,10 @@ menu > li {
     color: var(--text-color);
 }
 
+.main-text a {
+    text-decoration: none;
+}
+
 .main-text ul {
     margin-left: 0.8rem;
 }
@@ -117,6 +121,12 @@ menu > li {
 
 .main-text > h3 {
     font-size: 1.1rem;
+}
+
+.main-text > h3 > svg {
+    font-size: 1.1rem;
+    width: 1.1rem;
+    height: 1.1rem;
 }
 
 .main-text > h3 > a {
