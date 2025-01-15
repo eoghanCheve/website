@@ -1,3 +1,14 @@
+/* couleurs */
+:root {
+    --back-color: #e0e0df;
+    --menu-color: #c0ba9e;
+    --menu-hover-color: #7e6f5357;
+    --solid-color: #3d3217;
+    --main-text-color: #fffdf3;
+    --text-color: black;
+}
+/*  */
+
 
 @font-face {
     font-family: Oxygen;
@@ -7,7 +18,7 @@
 
 body {
     font-family: Oxygen;
-    background-color: #e0e0df;
+    background-color: var(--back-color);
     margin: 0px 3rem;
     min-height: 800px;
 }
@@ -25,7 +36,7 @@ h1 {
     margin: 3rem;
 }
 menu {
-    background-color: #c0ba9e;
+    background-color: var(--menu-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,14 +54,14 @@ menu > li {
 }
 
 .bouton-nav {
-    color: #3d3217;
-    background-color: #c0ba9e;
+    color: var(--solid-color);
+    background-color: var(--menu-color);
     text-align: center;
     text-decoration: none;
     font-size: 25px;
     padding: 0.7rem 1rem;
     border-style: solid;
-    border-color: #3d3217;
+    border-color: var(--solid-color);
     border-width: 0px 1px;
     margin-left: -1px;
 }
@@ -62,36 +73,42 @@ menu > li {
 
 
 .bouton-nav:hover {
-    background-color: #7e6f5357;
+    background-color: var(--menu-hover-color);
 }
 
 
 
 .main-text {
     margin: 2rem 40px;
-    background-color: #fffdf3;
+    background-color: var(--main-text-color);
     padding: 1rem 10px;
     max-height: 100%;
     text-align: left;
 }
 
-.main-text > p {
+.main-text p{
     font-size: 1.3rem;
     margin-left: 0.7rem;
+    color: var(--text-color);
 }
-.main-text > h2 {
+.main-text h2 {
     font-size: 1.5rem;
 }
 
-.main-text > ul {
+.main-text > h2 > a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.main-text ul {
     margin-left: 0.8rem;
 }
 
-.main-text > ul > li {
+.main-text li {
     font-size: 1.3rem;
 }
 
-.main-text > ul > li::marker {
+.main-text li::marker {
     content: "– ";
 }
 
@@ -105,11 +122,16 @@ menu > li {
 
 .main-text > h3 > a {
     text-decoration: solid;
-    color: black;
+    color: var(--text-color);
 }
 
 .main-text > h3 > a:hover {
     text-decoration: underline;
+}
+
+details > summary{
+    cursor: pointer;
+    width: 6rem;
 }
 
 footer {
@@ -117,13 +139,13 @@ footer {
 }
 
 .bouton{
-    color: #3d3217;
+    color: var(--solid-color);
     background-color: #f0de98;
     text-align: center;
     text-decoration: none;
     padding: 0.7rem 0.8rem;
     border-style: solid;
-    border-color: #3d3217;
+    border-color: var(--solid-color);
     border-width: 1px;
     border-radius: 8px;
     font-size: 1.2rem;
@@ -151,7 +173,7 @@ footer {
         margin: 1rem;
     }
     menu {
-        background-color: #c0ba9e;
+        background-color: var(--menu-color);
         display: block;
         max-width: 100%;
         margin-top: 2rem;
@@ -159,16 +181,16 @@ footer {
         font-size: 1.8rem;
     }
     .bouton-nav {
-        color: #3d3217;
+        color: var(--solid-color);
         display: block;
         margin: 0px;
         margin-bottom: -1px;
-        background-color: #c0ba9e;
+        background-color: var(--menu-color);
         text-align: left;
         text-decoration: none;
         font-size: 1.8rem;
         border-style: solid;
-        border-color: #3d3217;
+        border-color: var(--solid-color);
         border-width:1px 0px;
     }
     .bouton-nav-h {
