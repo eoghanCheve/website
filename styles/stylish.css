@@ -82,12 +82,21 @@ menu > li {
 .main-text > h2 {
     font-size: 1.5rem;
 }
+
+.main-text > ul {
+    margin-left: 0.8rem;
+}
+
 .main-text > ul > li {
     font-size: 1.3rem;
 }
 
 .main-text > ul > li::marker {
     content: "– ";
+}
+
+.cours > li {
+    margin-top: 0.4rem;
 }
 
 .main-text > h3 {
