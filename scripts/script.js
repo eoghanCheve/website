@@ -1,10 +1,15 @@
+
+function details_opener(path) {
+    const id = path.split("#").pop();
+    var details = document.getElementById(id + "-details");
+    if (details) { 
+        details.open = true;
+    }
+}
+
 function init() {
     const path = document.URL;
-    const page = path.split("/").pop();
-    var stage_details = document.getElementById("stage-L3-details");
-    if (page.match("career.html#stage-L3")) {
-        stage_details.open = true;
-    }
+    details_opener(path);
 }
 
 window.onload = init;
