@@ -24,7 +24,6 @@
     src: url(../fonts/OxygenMono-Regular.ttf);
 }
 
-
 body {
     font-family: Oxygen;
     background-color: var(--back-color);
@@ -44,6 +43,9 @@ h1 {
     font-size: 6rem;
     margin: 3rem;
 }
+
+/* nav */
+
 menu {
     background-color: var(--menu-color);
     display: flex;
@@ -80,12 +82,11 @@ menu > li {
     padding: 0.7rem 0rem;
 }
 
-
 .bouton-nav:hover {
     background-color: var(--menu-hover-color);
 }
 
-
+/* main text */
 
 .main-text {
     margin: 2rem 40px;
@@ -100,6 +101,7 @@ menu > li {
     margin-left: 0.7rem;
     color: var(--text-color);
 }
+
 .main-text h2 {
     font-size: 1.5rem;
 }
@@ -148,7 +150,7 @@ menu > li {
     text-decoration: underline;
 }
 
-details > summary{
+details > summary {
     cursor: pointer;
     width: 6rem;
 }
